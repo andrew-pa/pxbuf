@@ -6,6 +6,7 @@ namespace pxbuf
 	static map<HWND, framebuffer*> fbfs;
 
 	framebuffer::framebuffer(const string& title, XMFLOAT2 size)
+		: fbsize(size)
 	{
 		WNDCLASS wc;
 		wc.style = CS_HREDRAW | CS_VREDRAW;
