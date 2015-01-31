@@ -18,6 +18,12 @@ inline void putpx(int* vd, XMINT2 p, int color)
 inline void draw_line(int* vd, XMFLOAT2 a, XMFLOAT2 b, int color)
 {
 	float deltax = b.x - a.x;
+	if(deltax == 0.f)
+	{
+		for (int y = a.y; y < b.y; ++y)
+			putpx(vd, XMINT2(a.x, y), color);
+		return;
+	}
 	float deltay = b.y - a.y;
 	float err = 0;
 	float dterr = fabsf(deltay / deltax);
@@ -50,6 +56,9 @@ int CALLBACK WinMain(
 	{
 		float t = fb.frame_timer.time();
 		memset(vd, 0, sizeof(int) * s.x * s.y);
-		draw_line(vd, XMFLOAT2(64, 64), XMFLOAT2(200+sinf(t)*50.f, 200), 0xff0033ff);
+		draw_line(vd, XMFLOAT2(64, 64), XMFLOAT2(200, 64), 0x8f0033ff);
+		draw_line(vd, XMFLOAT2(64, 64), XMFLOAT2(64, 200), 0x8faa33ff);
+		draw_line(vd, XMFLOAT2(200, 64), XMFLOAT2(200, 200), 0x8faa33ff);
+		draw_line(vd, XMFLOAT2(64, 200), XMFLOAT2(200, 200), 0x8f0033ff);
 	}
 }
