@@ -186,8 +186,6 @@ namespace pxbuf
 		
 		{
 			frame_timer.update();
-			const float color[4] = { 0.f, 0.f, 1.f, 1.f };
-			context->ClearRenderTargetView(rtv.Get(), color);
 
 			D3D11_MAPPED_SUBRESOURCE mr;
 			context->Map(fbf.Get(), 0, D3D11_MAP_WRITE_DISCARD, 0, &mr);

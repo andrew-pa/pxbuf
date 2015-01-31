@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pxbuf", "pxbuf\pxbuf.vcxproj", "{52DA1A24-BB56-48A2-9B09-E6F67CEB1D67}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_mandlebrot", "test_mandlebrot\test_mandlebrot.vcxproj", "{545256C1-2393-4D67-9E4D-769629948660}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +17,10 @@ Global
 		{52DA1A24-BB56-48A2-9B09-E6F67CEB1D67}.Debug|Win32.Build.0 = Debug|Win32
 		{52DA1A24-BB56-48A2-9B09-E6F67CEB1D67}.Release|Win32.ActiveCfg = Release|Win32
 		{52DA1A24-BB56-48A2-9B09-E6F67CEB1D67}.Release|Win32.Build.0 = Release|Win32
+		{545256C1-2393-4D67-9E4D-769629948660}.Debug|Win32.ActiveCfg = Debug|Win32
+		{545256C1-2393-4D67-9E4D-769629948660}.Debug|Win32.Build.0 = Debug|Win32
+		{545256C1-2393-4D67-9E4D-769629948660}.Release|Win32.ActiveCfg = Release|Win32
+		{545256C1-2393-4D67-9E4D-769629948660}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
