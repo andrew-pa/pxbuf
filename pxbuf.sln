@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pxbuf", "pxbuf\pxbuf.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_mandlebrot", "test_mandlebrot\test_mandlebrot.vcxproj", "{545256C1-2393-4D67-9E4D-769629948660}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_wireframe", "test_wireframe\test_wireframe.vcxproj", "{6EB25E98-EC87-41CB-86D4-F06FCB88B08C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{545256C1-2393-4D67-9E4D-769629948660}.Debug|Win32.Build.0 = Debug|Win32
 		{545256C1-2393-4D67-9E4D-769629948660}.Release|Win32.ActiveCfg = Release|Win32
 		{545256C1-2393-4D67-9E4D-769629948660}.Release|Win32.Build.0 = Release|Win32
+		{6EB25E98-EC87-41CB-86D4-F06FCB88B08C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6EB25E98-EC87-41CB-86D4-F06FCB88B08C}.Debug|Win32.Build.0 = Debug|Win32
+		{6EB25E98-EC87-41CB-86D4-F06FCB88B08C}.Release|Win32.ActiveCfg = Release|Win32
+		{6EB25E98-EC87-41CB-86D4-F06FCB88B08C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
