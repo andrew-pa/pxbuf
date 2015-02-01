@@ -6,7 +6,6 @@ namespace pxbuf
 	static map<HWND, framebuffer*> fbfs;
 
 	framebuffer::framebuffer(const string& title, XMFLOAT2 size)
-		: fbsize(size)
 	{
 		WNDCLASS wc;
 		wc.style = CS_HREDRAW | CS_VREDRAW;
@@ -240,7 +239,9 @@ namespace pxbuf
 				chr(hr);
 			}
 			ostringstream oss;
-			oss << "SPF: " << frame_timer.delta_time() << " FPS: " << 1./frame_timer.delta_time() << endl;
+			//oss << "SPF: " << frame_timer.delta_time() << " FPS: " << 1./frame_timer.delta_time() << endl;
+
+			oss << frame_timer.delta_time() << ", " << 1. / frame_timer.delta_time() << std::endl;
 			OutputDebugStringA(oss.str().c_str());
 			double excess = fabs((1/60)-frame_timer.delta_time()); //tries for 60fps or 1/60spf 
 			DWORD msst = (DWORD)(excess);

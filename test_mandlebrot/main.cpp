@@ -15,7 +15,7 @@ int CALLBACK WinMain(
 	_In_  int cmds
 	)
 {
-	XMFLOAT2 s = XMFLOAT2(640,480);
+	XMFLOAT2 s = XMFLOAT2(1280,720);
 	int* vd = new int[(int)s.x*(int)s.y];
 	pxbuf::framebuffer fb{ "pxbuf test", s };
 	vector<int> pal;
@@ -41,7 +41,7 @@ int CALLBACK WinMain(
 				float y0 = (_y / s.y)*2.f - 1.f;
 				float x = 0.f, y = 0.f;
 				uint itr = 0;
-				while ((x*x + y*y) < 4 && itr < 512)
+				while ((x*x + y*y) < 4 && itr < 100)
 				{
 					float xt = x*x - y*y + x0;
 					y = 2 * x*y + y0;

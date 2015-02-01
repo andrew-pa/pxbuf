@@ -83,12 +83,12 @@ int CALLBACK WinMain(
 	edges.push_back(make_pair(3, 2));
 	edges.push_back(make_pair(0, 3));
 
-	edges.push_back(make_pair(5, 4));
+	edges.push_back(make_pair(4, 5));
 	edges.push_back(make_pair(6, 5));
-	edges.push_back(make_pair(7, 6));
+	edges.push_back(make_pair(6, 7));
 	edges.push_back(make_pair(4, 7));
 
-	edges.push_back(make_pair(4, 0));
+	edges.push_back(make_pair(0, 4));
 	edges.push_back(make_pair(5, 1));
 	edges.push_back(make_pair(6, 2));
 	edges.push_back(make_pair(7, 3));
